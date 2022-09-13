@@ -29,6 +29,7 @@
     --bg_color: green;
     --color_4: pink;
     --color_5: #ffffff;
+    
 }
 
 /*General settings*/
@@ -36,16 +37,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*TEST*/
+    width: 100%;
 }
 
 .nav-bar{
     display: flex;
     justify-content: space-between;
-    border: 10px var(--border_color)solid;
+    background-color: var(--bg_color);
+    flex-wrap: wrap;
 }
 
 ul{
     display: flex;
+    max-width: 300px;
+    /*TEST*/
+    margin-left: auto;
 }
 
 ul li{
@@ -58,4 +65,159 @@ ul li a{
     color: var(--text_color);
 }
 
+
 /*Above Validated 2022-09-12*/
+
+
+/*TEST AREA*/
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-wrapper{
+    max-width: 980px;
+}
+/*
+.nav-wrapper{
+    display: flex;
+    justify-content: center;
+    max-width: 980px;
+}
+*/
+.test-container{
+    display: flex;
+    justify-content: center;
+    background-color: indigo;
+    gap: 10px;
+}
+
+.test-content2, .test-content1{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-color: #000000;
+    }
+
+    .test-container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px){
+
+    body{
+        background-color: blue;
+    }
+
+    
+}
+
+
+
+/*
+.flex-container{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.row{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.column{
+    display: flex;
+    flex-basis: 100%;
+    flex: 1;
+    gap: 15px;
+}
+
+.column1{
+    background-color: red;
+}
+
+.column2{
+    background-color: blue;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--bg_color);
+}
+
+.grid-item{
+    background-color: #ffffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.item1{
+    grid-column: 1;
+    /*grid-row: 1 ;
+}
+
+.item2{
+    grid-column: 2 ;
+   /* grid-row:1 / span 2 ;
+}
+
+
+
+#item1{
+    background-color: red;
+}
+#item2{
+    background-color: aqua;
+}
+#item3{
+    background-color: blue;
+}
+#item4{
+    background-color: blueviolet;
+}
+
+
+.grid-area-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    background-color: aqua;
+    padding:10px;
+
+    grid-template-areas: 
+    "area1 area1 area4 area4"
+    "area2 area2 area3 area3";
+}
+
+#area1{
+grid-area: area1;
+}
+
+
+#area2{
+grid-area: area2;
+}
+
+
+#area3{
+grid-area: area3;
+}
+
+
+#area4{
+grid-area: area4;
+}
+
+*/
