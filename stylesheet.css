@@ -44,7 +44,6 @@
 .nav-bar{
     display: flex;
     justify-content: space-between;
-    background-color: var(--bg_color);
     flex-wrap: wrap;
 }
 
@@ -78,6 +77,12 @@ body{
 }
 
 .nav-wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg_color);
+}
+
+.nav-container{
     max-width: 980px;
 }
 /*
