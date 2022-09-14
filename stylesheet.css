@@ -23,17 +23,21 @@
 
 
 /*1. Root settings*/
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root{
     --text_color: #000000;
     --border_color: red;
     --bg_color: green;
     --color_4: pink;
     --color_5: #ffffff;
-    
 }
 
 /*General settings*/
 *{
+    font-family: 'DM Serif Display', serif;
+    color: var(--color_5);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
