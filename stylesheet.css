@@ -100,7 +100,8 @@ ul{
 
 ul li{
     list-style: none;
-    padding: .5rem .5rem;
+    padding: .5rem 1.2rem;
+    text-align: right;
 }
 
 ul li a{
@@ -114,9 +115,11 @@ ul li a:hover{
     color: var(--bg_color4);
 }
 
+/*
 @media (min-width: 600px) {
     ul{
-        /*display: flex;*/
+        display: flex;
+
         max-width: 300px;
     }
 
@@ -124,6 +127,7 @@ ul li a:hover{
         padding: .5rem .5rem;
     }
 }
+*/
 
 /*Above Validated 2022-09-12*/
 
@@ -144,7 +148,7 @@ ul li a:hover{
 }
 
 .nav-container{
-    max-width: 980px;
+    max-width: 1200px;
     width: 100%;
 }
 /*Above Validated 2022-09-14*/
@@ -181,6 +185,7 @@ ul li a:hover{
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
+    background-position: left bottom;
     /*height: 70vh;*/
     grid-area: hero-item1;
 }
@@ -197,7 +202,7 @@ ul li a:hover{
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    background-position: center;
+    background-position: center bottom;
     height: 40vh;
     grid-area: hero-item2;
 }
@@ -239,3 +244,5 @@ ul li a:hover{
         "hero-item1 hero-item3";
     }
 }
+
+/*Above Validated 2022-09-14*/
