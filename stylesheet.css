@@ -36,12 +36,15 @@
     --bg_color3: #FF90E9;
     --bg_color4: #23A094;
 }
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*2. Body, html settings*/
 
 body{
     height: 100%;
     overflow-x: hidden;
+    background-color: var(--bg_color1);
 }
 
 *{
@@ -157,6 +160,19 @@ ul li a:hover{
     width:100px;
 }
 
+.logo a{
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+    color: var(--text_color1);
+    font-weight: 900;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.logo a:hover{
+    color: var(--bg_color4);
+}
+
 .logo a img{
     height: auto;
     max-width: 100%;
@@ -167,7 +183,7 @@ ul li a:hover{
 
 .hero-wrapper{
     /*height: 100%;*/
-    margin-top: 3.4rem;
+    margin-top: 2.2rem;
 }
 
 .nav-wrapper,
@@ -192,6 +208,12 @@ ul li a:hover{
     text-align: right;
     padding: 20vh 1rem 0 0;
     font-size: 3rem;
+}
+
+.hero-logo-text{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 900;
 }
 /*Above Validated 2022-09-14*/
 .hero-item2{
