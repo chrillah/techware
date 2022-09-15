@@ -13,19 +13,21 @@
 */
 
 
-
+/*===============================*/
 /*Table of content
 1. Root settings
 2. Body, html settings
 3. Buttons
 4. Nav-bar
 5. Hero
-6. Main
+6. Main Content
 7. Footer
 */
+/*===============================*/
 
-
+/*===============================*/
 /*1. Root settings*/
+/*===============================*/
 
 /*Colors*/
 :root{
@@ -39,7 +41,10 @@
 /*Font*/
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+/*===============================*/
 /*2. Body, html settings*/
+/*===============================*/
 
 body{
     height: 100%;
@@ -55,7 +60,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/*===============================*/
 /*3. Buttons*/
+/*===============================*/
 
 /* CSS */
 .btn {
@@ -85,8 +93,9 @@ body{
   transform: translate(2px, 2px);
 }
 
-
-/*4. Nav-bar*/
+/*===============================*/
+/*4.  Nav-bar*/
+/*===============================*/
 .nav-bar{
     display: flex;
     align-items: center;
@@ -179,7 +188,10 @@ ul li a:hover{
 }
 /*Above Validated 2022-09-14*/
 
-/*4. Hero*/
+
+/*===============================*/
+/*5. Hero*/
+/*===============================*/
 
 .hero-wrapper{
     /*height: 100%;*/
@@ -206,7 +218,7 @@ ul li a:hover{
 
 .hero-h1-text{
     text-align: right;
-    padding: 20vh 1rem 0 0;
+    padding: 20vh 1rem 0 1rem;
     font-size: 3rem;
 }
 
@@ -266,3 +278,29 @@ ul li a:hover{
 }
 
 /*Above Validated 2022-09-14*/
+
+
+/*===============================*/
+/* 6. Main Content*/
+/*===============================*/
+
+.main-intro-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color: #FF90E9
+}
+
+.main-intro-text{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    padding: 6rem 0;
+    font-size: 3rem;
+    text-align: center;
+    max-width: 600px;
+}
+
+.main-intro{
+    margin: 0 1rem;
+}
