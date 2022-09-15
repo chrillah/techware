@@ -327,19 +327,18 @@ ul li a:hover{
     width:80%;
 }
 
-/*
-.mySlides{
+.slides{
     display:none;
 }
-*/
+
 
 /*BYT NAMN!!!!*/
-.mySlides h1, p{
+.slides h1, p{
     text-align: center;
     margin-top: -2vh;
 }
 
-.mySlides .mySlides-header{
+.slides .slides-header{
     font-size: 2rem;
 }
 
@@ -377,7 +376,7 @@ ul li a:hover{
     .slideshow-container{
         height:50vh;
     }
-    
+
     .slideshow-container img{
         width: 99%;
        
