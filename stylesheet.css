@@ -37,6 +37,7 @@
     --bg_color2: #FFC900;
     --bg_color3: #FF90E9;
     --bg_color4: #23A094;
+    --bg_color5: #E24530;
 }
 /*Font*/
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -295,7 +296,7 @@ ul li a:hover{
     justify-content: center;
     align-items: center;
     width:100%;
-    background-color: #FF90E9
+    background-color: var(--bg_color5);
 }
 
 .main-intro-header{
@@ -344,7 +345,7 @@ ul li a:hover{
 }
 
 
-.slides h1, p{
+.slides h1, .slides p{
     text-align: center;
 }
 
@@ -449,8 +450,29 @@ ul li a:hover{
 @media (min-width:860px){
     .galleri-img{
         margin: 0 auto;
-        width: 20%;
+        width: 25%;
     }
 }
 
+.about-container{
+    padding: 4rem;
+    background-color: var(--bg_color4);
+}
+
+.about-header{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+
 /*Above Validated 2022-09-15*/
+
+@media (min-width:780px){
+    .about-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:5rem;
+    }
+}
