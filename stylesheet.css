@@ -216,13 +216,13 @@ ul li a:hover{
     grid-area: hero-item1;
 }
 
-.hero-h1-text{
+.hero-h1-header{
     text-align: right;
     padding: 20vh 1rem 0 1rem;
     font-size: 3rem;
 }
 
-.hero-logo-text{
+.hero-logo-header{
     font-family: 'Fraunces', serif;
     font-style: italic;
     font-weight: 900;
@@ -249,7 +249,7 @@ ul li a:hover{
     padding-bottom: 2rem;
 }
 
-.hero-h2-text{
+.hero-h2-header{
     text-align: center;
     font-size: 2rem;
     padding: 2rem 0 1rem 0;
@@ -284,6 +284,7 @@ ul li a:hover{
 /* 6. Main Content*/
 /*===============================*/
 
+/*Main-intro*/
 .main-intro-wrapper{
     display: flex;
     justify-content: center;
@@ -292,7 +293,7 @@ ul li a:hover{
     background-color: #FF90E9
 }
 
-.main-intro-text{
+.main-intro-header{
     font-family: 'Fraunces', serif;
     font-style: italic;
     padding: 6rem 0;
@@ -304,3 +305,83 @@ ul li a:hover{
 .main-intro{
     margin: 0 1rem;
 }
+
+/*Slideshow Bob*/
+/*BYT NAMN!!!!!*/
+.slideshow-container{
+    width: 80%;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5vh;
+    background-color: var(--bg_color);
+    height: 90vh;
+}
+
+.slideshow-container img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    padding: 50px 50px;
+    width:80%;
+}
+
+/*
+.mySlides{
+    display:none;
+}
+*/
+
+/*BYT NAMN!!!!*/
+.mySlides h1, p{
+    text-align: center;
+    margin-top: -2vh;
+}
+
+.mySlides .mySlides-header{
+    font-size: 2rem;
+}
+
+/*Fading animation*/
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from{
+        opacity: .4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+  /* Slideshow Responsive settings*/
+  /*Section About Grid Responsive settings*/
+  @media only screen and (max-width:750px){
+    .slideshow-container{
+        height:70vh;
+       
+    }
+    .slideshow-container img{
+        width: 99%;
+       
+    }
+ 
+  
+}
+
+@media only screen and (max-width:450px){
+    .slideshow-container{
+        height:50vh;
+    }
+    
+    .slideshow-container img{
+        width: 99%;
+       
+    }  
+}
+
+
