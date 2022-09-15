@@ -38,6 +38,7 @@
     --bg_color3: #FF90E9;
     --bg_color4: #23A094;
     --bg_color5: #E24530;
+    --border-style: solid 1px var(--border_color);
 }
 /*Font*/
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -122,8 +123,11 @@ ul li a{
     margin: .1rem 0;
 }
 
+
 ul li a:hover{
     color: var(--bg_color4);
+    /*background-color: var(--bg_color2);
+    border-radius: 100px;*/
 }
 
 /*
@@ -183,8 +187,8 @@ ul li a:hover{
     font-style: italic;
 }
 */
-.logo a:hover{
-    color: var(--bg_color4);
+.logo:hover{ 
+    background-color: var(--bg_color4);
 }
 
 .logo a img{
@@ -209,7 +213,7 @@ ul li a:hover{
 .hero-item1, 
 .hero-item2, 
 .hero-item3{
-    border: 1px solid var(--border_color);
+    border: var(--border-style);
 }
 
 .hero-item1{
@@ -226,12 +230,14 @@ ul li a:hover{
     text-align: right;
     padding: 20vh 1rem 0 1rem;
     font-size: 3rem;
+    font-kerning: auto;
 }
 
 .hero-logo-header{
     font-family: 'Fraunces', serif;
     font-style: italic;
     font-weight: 900;
+    font-kerning: auto;
 }
 /*Above Validated 2022-09-14*/
 .hero-item2{
@@ -273,7 +279,7 @@ ul li a:hover{
         "hero-item3";
 }
 
-@media (min-width:666px) {
+@media (min-width:766px) {
     .hero-container{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
@@ -333,7 +339,7 @@ ul li a:hover{
 
 @media (min-width: 750px){
     .slideshow-container img{
-        width: 40%;
+        width: 30%;
     }
 }
 
@@ -384,7 +390,10 @@ ul li a:hover{
 /*Main-Galleri*/
 
 .main-galleri-container{
-    padding:-4vh 2rem;
+    /*border: var(--border-style);*/
+    /*padding: 0 2rem;*/
+    margin: -.1rem 0;
+    background-color: var(--bg_color5);
 }
 
 .galleri-information{
@@ -409,8 +418,9 @@ ul li a:hover{
 
 .galleri-item,
 .galleri-item-rev{
+    background-color: var(--bg_color1);;
     display: flex;
-    max-width: 1200px;
+    max-width: 1193px;
     margin: 0 auto;
     padding: 3rem;
     border:solid 1px var(--border_color);
@@ -455,8 +465,10 @@ ul li a:hover{
 }
 
 .about-container{
-    padding: 4rem;
+    border: var(--border-style);
+    padding: 8rem 4rem;
     background-color: var(--bg_color4);
+    /*height: 500px;*/
 }
 
 .about-header{
@@ -465,7 +477,21 @@ ul li a:hover{
     font-weight: 900;
     font-size: 3rem;
     padding-bottom: 3rem;
+    max-width: 400px;
 }
+
+.about-text{
+    max-width: 400px;
+}
+
+.about-column1,
+.about-column2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
 
 /*Above Validated 2022-09-15*/
 
