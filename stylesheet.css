@@ -307,15 +307,16 @@ ul li a:hover{
 }
 
 /*Slideshow Bob*/
-/*BYT NAMN!!!!!*/
+
 .slideshow-container{
-    width: 80%;
+    /*width: 80%;*/
     position: relative;
     justify-content: center;
     margin: 0 auto;
     margin-top: 5vh;
     background-color: var(--bg_color);
-    height: 90vh;
+    max-height: 1vh;
+    width: 70%;
 }
 
 .slideshow-container img{
@@ -323,8 +324,8 @@ ul li a:hover{
     justify-content: center;
     align-items: center;
     margin:0 auto;
-    padding: 50px 50px;
-    width:80%;
+    width: 70%;
+    /*padding: 50px 50px;*/
 }
 
 .slides{
@@ -332,14 +333,17 @@ ul li a:hover{
 }
 
 
-/*BYT NAMN!!!!*/
 .slides h1, p{
     text-align: center;
-    margin-top: -2vh;
 }
 
-.slides .slides-header{
+.slides-header{
     font-size: 2rem;
+    margin-top: -4vh;
+}
+
+.slides-text{
+    padding: 1rem 1rem;
 }
 
 /*Fading animation*/
@@ -357,30 +361,38 @@ ul li a:hover{
     }
 }
 
+@media (min-width: 666px){
+    .slides-text{
+        padding: 1rem 3rem;
+    }
+}
+
   /* Slideshow Responsive settings*/
   /*Section About Grid Responsive settings*/
+
+  /*
   @media only screen and (max-width:750px){
     .slideshow-container{
-        height:70vh;
+        height:30vh;
        
     }
+
     .slideshow-container img{
-        width: 99%;
-       
+        width: 70%;
     }
- 
   
 }
 
+
 @media only screen and (max-width:450px){
     .slideshow-container{
-        height:50vh;
+        height:30vh;
     }
 
     .slideshow-container img{
-        width: 99%;
+        width: 70%;
        
     }  
 }
 
-
+*/
