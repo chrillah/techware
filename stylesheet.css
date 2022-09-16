@@ -79,15 +79,13 @@ body{
 /*3. Buttons*/
 /*===============================*/
 
-/* CSS */
 .btn{
   border-radius: 100px;
-  box-shadow: var(--border_color) 4px 4px 0 0;
+  box-shadow: var(--border_color) 5px 5px 0 0;
   color: var(--text_color1);
   cursor: pointer;
   display: inline-block;
   font-weight: bolder;
-  /*font-size: 18px;*/
   margin: 1.5rem 0;
   padding: 0 10px;
   line-height: 2rem;
@@ -100,13 +98,13 @@ body{
 
 .btn-vers-1{
     background-color: var(--bg_color1);
-    border: 10px solid var(--bg_color2);
+    border: 4px solid var(--bg_color2);
     /*border: 10px solid var(--bg_color2);*/
 }
 
 .btn-vers-2{
     background-color: var(--bg_color1);
-    border: 10px solid var(--bg_color2);
+    border: 4px solid var(--purple);
 }
 
 
@@ -120,12 +118,10 @@ body{
 }
 
 
-
-
-
 /*===============================*/
 /*4.  Nav-bar*/
 /*===============================*/
+
 .nav-bar{
     display: flex;
     align-items: center;
@@ -175,44 +171,24 @@ ul li a:hover{
     left: 0;
     position: fixed;
     z-index: 3;
-   /* margin-top: .3rem;*/
-    /*Detta gör att nav-baren håller sig i mitten*/
-    /*left: 50%;
-    transform: translate(-50%, 0);*/
 }
 
 .nav-container{
     max-width: 1200px;
     width: 100%;
 }
+
+
 /*Above Validated 2022-09-14*/
 
 /*Logo*/
 
-/*
-.logo{
-    padding: .2rem 0 0 .3rem;
-    width:100px;
-}
-*/
-
-/*
-.logo a{
-    font-family: 'Fraunces', serif;
-    text-decoration: none;
-    color: var(--text_color1);
-    font-weight: 900;
-    font-size: 1.5rem;
-    font-style: italic;
-}
-*/
 .logo:hover{ 
     background-color: var(--bg_color4);
     margin-left: .2rem;
 }
 
 .logo a img{
-    /*margin-top: -.1rem;*/
     margin-bottom: -.3rem;
     max-height: 10vh;
     width: 100%;
@@ -415,7 +391,7 @@ ul li a:hover{
     }
 }
 
-/*Above Validated 2022-09-15*/
+
 /*Above Validated 2022-09-15*/
 
 /*Main-Galleri*/
@@ -431,6 +407,7 @@ ul li a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 95%;
     max-width: 400px;
     margin: 0 auto;
     padding:1rem;
@@ -484,10 +461,6 @@ ul li a:hover{
 }
 .galleri-item-rev{
     flex-direction: column-reverse;
-    /*
-    border-bottom: 1px solid var(--border_color);
-    border-top: 1px solid var(--border_color);
-    */
 }
 
 @media (min-width:700px){
@@ -508,16 +481,6 @@ ul li a:hover{
         width: 50%;
     }
 }
-/*
-
-@media (min-width:800px){
-    .galleri-img{
-        margin: 0 auto;
-        width: 50%;
-    }
-}
-
-*/
 
 @media (min-width:780px){
     .galleri-img{
@@ -529,7 +492,6 @@ ul li a:hover{
     border: var(--border-style);
     padding: 8rem 4rem;
     background-color: var(--purple);
-    /*height: 500px;*/
 }
 
 .about-header{
@@ -584,7 +546,9 @@ ul li a:hover{
 
 .form-column1{
     margin-left: auto;
+    padding-bottom:4rem;
 }
+
 .form-column1 span{
     font-family: var(--font-fraunces);
     font-style: italic;
@@ -597,7 +561,7 @@ ul li a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 /*
@@ -660,12 +624,15 @@ ul li a:hover{
 */
 
 @media(min-width:780px){
+
     .form-section-container{
         display: flex;
     }
 }
 
 /*Above Validated 2022-09-16*/
+
+
 /*Information text*/
 
 .information-wrapper{
@@ -736,7 +703,6 @@ ul li a:hover{
 .contact-item a{
     display: flex;
     align-items: center;
-    /*padding-bottom: 1rem;*/
 }
 
 .contact-item img{
@@ -751,7 +717,6 @@ ul li a:hover{
 
 
 .corporation-info{
-    /*background-color: blueviolet;*/
     padding-bottom: 2rem;
 }
 
