@@ -45,6 +45,11 @@ Table of content
     --bg_color3: #FF90E9;
     --bg_color4: #23A094;
     --bg_color5: #E24530;
+    --grey:#7F7F7F;
+    --purple:#D1B4F8;
+    --yellow: #F9E179;
+    --red: #EC706B;
+
     --border-style: solid 1px var(--border_color);
     --header-font-weight: 500;
     --font-fraunces:'Fraunces', serif;
@@ -96,6 +101,7 @@ body{
 .btn-vers-1{
     background-color: var(--bg_color1);
     border: 10px solid var(--bg_color2);
+    /*border: 10px solid var(--bg_color2);*/
 }
 
 .btn-vers-2{
@@ -232,7 +238,7 @@ ul li a:hover{
 
 .hero-item1{
     background-image: url("img/screenx_small_model.png");
-    background-color: var(--bg_color2);
+    background-color: var(--purple);
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
@@ -317,7 +323,7 @@ ul li a:hover{
     justify-content: center;
     align-items: center;
     width:100%;
-    background-color: var(--bg_color5);
+    background-color: var(--red);
 }
 
 .main-intro-header{
@@ -367,7 +373,7 @@ ul li a:hover{
 }
 
 .slides{
-    background-color: var(--bg_color2);
+    background-color: var(--yellow);
     border: 1px solid var(--border_color);
     display:none;
     padding-bottom: 3rem;
@@ -427,6 +433,12 @@ ul li a:hover{
     align-items: center;
     max-width: 400px;
     margin: 0 auto;
+    padding:1rem;
+    border-radius: 10px;
+    border: var(--border-style);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
 }
 
 .galleri-img{
@@ -435,6 +447,12 @@ ul li a:hover{
     width: 95%;
     border: var(--border-style);
     border-radius: 10px;
+
+    
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+
 }
 
 .product-header{
@@ -457,7 +475,7 @@ ul li a:hover{
     max-width: 1193px;
     margin: 0 auto;
     padding: 3rem;
-    border:solid 1px var(--border_color);
+    /*border:var(--border-style);*/
     gap:1rem;
 }
 
@@ -510,7 +528,7 @@ ul li a:hover{
 .about-container{
     border: var(--border-style);
     padding: 8rem 4rem;
-    background-color: var(--bg_color4);
+    background-color: var(--purple);
     /*height: 500px;*/
 }
 
@@ -550,31 +568,47 @@ ul li a:hover{
 /* 7. Form Section*/
 /*===============================*/
 .form-section-wrapper{
-    background-color: var(--bg_color5);
+   /* background-color: var(--bg_color5);*/
+    background-color: var(--red);
 }
 .form-section-container{
     margin:0 3rem;
     padding: 4rem 0;
 }
 .form-header{
-    font-size: 3rem;
+    font-size: 4rem;
     font-kerning: auto;
     max-width: 300px;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
-.form-column1,
+.form-column1{
+    margin-left: auto;
+}
+.form-column1 span{
+    font-family: var(--font-fraunces);
+    font-style: italic;
+}
+
+
 .form-column2{
     width:100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     max-width: 500px;
 }
 
+/*
+#f-name,
+#l-name,
+#email,
+.form-column2 label{
+    align-self:center
+}
 
+*/
 .form-column1 label, .form-column2 label{
     font-weight: bold;
     padding: .5rem 0 .1rem 0;
@@ -582,8 +616,8 @@ ul li a:hover{
 
 .form-column2 input[type=text],
 .form-column2 input[type=email]{
-padding:.2rem 4rem;
-border: none;
+    padding:.2rem 4rem;
+    border: none;
 }
 
 /*
@@ -597,6 +631,7 @@ border: none;
     margin-bottom: 4rem;
 }
 
+/*
 .product-radio input[type=radio]{
     cursor: pointer;
 }
@@ -622,6 +657,7 @@ border: none;
 .product-radio-name input[type=radio]{
     margin: 0 1rem;
 }
+*/
 
 @media(min-width:780px){
     .form-section-container{
@@ -644,7 +680,7 @@ border: none;
 }
 
 .information-text{
-    max-width: 800px;
+    max-width: 900px;
     font-weight: bold;
 }
 
