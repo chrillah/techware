@@ -112,7 +112,8 @@ ul{
 
 ul li{
     list-style: none;
-    padding: .5rem 1.2rem;
+    padding: 0 1.2rem;
+    /*padding: .5rem 1.2rem;*/
     text-align: right;
 }
 
@@ -120,7 +121,7 @@ ul li a{
     text-decoration: none;
     color: var(--text_color1);
     font-weight: bolder;
-    margin: .1rem 0;
+    /*margin: .1rem 0;*/
 }
 
 
@@ -157,6 +158,7 @@ ul li a:hover{
     left: 0;
     position: fixed;
     z-index: 3;
+   /* margin-top: .3rem;*/
     /*Detta gör att nav-baren håller sig i mitten*/
     /*left: 50%;
     transform: translate(-50%, 0);*/
@@ -189,10 +191,11 @@ ul li a:hover{
 */
 .logo:hover{ 
     background-color: var(--bg_color4);
+    margin-left: .2rem;
 }
 
 .logo a img{
-    margin-top: -.1rem;
+    /*margin-top: -.1rem;*/
     margin-bottom: -.3rem;
     max-height: 10vh;
     width: 100%;
