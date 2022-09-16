@@ -28,7 +28,7 @@
                 <div class="nav-bar-links">
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#product">Product</a></li>
                         <li><a href="#footer">Contact</a></li>
                     </ul>
                 </div>
@@ -49,7 +49,7 @@
             <section class="hero-item3">
                 <h2 class="hero-h2-header">Become one with our technology
                 </h2>
-                <a href="#" class="btn">Order now</a>
+                <a href="#order" class="btn">Order now</a>
             </section>
         </div>
     </div>
@@ -85,7 +85,7 @@
     </section>
     <!--Above Validated 2022-09-15-->
     <!--Above Validated 2022-09-15-->
-    <div class="main-galleri-wrapper">
+    <div id="product" class="main-galleri-wrapper">
         <div class="main-galleri-container">
             <div class="galleri-item">
                 <img class="galleri-img" src="img/inurface_product_model.png"
@@ -95,7 +95,7 @@
                     <p class="product-text">Whenever you toggling between texts or catching up on online-threats, take
                         full superiority of the expansive Face Screen. Computer like power in your face transforms apps
                         advance with beautiful User Interface to give you menus and more in a glimpse.</p>
-                    <a href="#" class="btn">Order now</a>
+                    <a href="#order" class="btn">Order now</a>
                 </section>
             </div>
             <div class="galleri-item-rev">
@@ -105,7 +105,7 @@
                         an immersive screen and upgraded performance.
                         See what the ScreenX can bring to your world. Amp up your large-screen experience with the
                         immersive Dolly Atmost audio experience and stereo speakers built in </p>
-                    <a href="#" class="btn">Order now</a>
+                    <a href="#order" class="btn">Order now</a>
                 </section>
                 <img class="galleri-img" src="img/screenx_product_model.png"
                     alt="Techware product Screenx with model with cool background of a cyberpunk city">
@@ -118,7 +118,7 @@
                     <p class="product-text">Now you can finally get into the cool area. Cool shades camouflaged with a
                         in Your Face Display Camera. With a breathtaking 8-inch Large Display means there's more screen
                         and no messing between you and your favorite social media games</p>
-                    <a href="#" class="btn">Order now</a>
+                    <a href="#order" class="btn">Order now</a>
                 </section>
             </div>
         </div>
@@ -148,38 +148,62 @@
             </div>
         </div>
     </div>
-    <div class="form-section-wrapper">
-        <div class="form-section-container">
-            <section class="form-column1">
+    <div id="order" class="form-section-wrapper">
+        <form action="https://www.youtube.com/watch?v=e9dZQelULDk&ab_channel=SteveCutts" method="post"
+            class="form-section-container">
+            <section class=" form-column1">
                 <h1 class="form-header">Why wait for the future</h1>
-                <fieldset class="product-radio">
-                    <legend class="product-radio-label">Choose your gear now</legend>
+                <fieldset class="product-radio-fieldset">
+                    <legend id="product-radio-legend">Choose your gear now</legend>
+
+
+
+
                     <label for="inurface" class="product-radio-name">
                         <input type="radio" class="product-radio" value="iNURFace" id="inurface"
-                            name="brainwashing_machine">iNURFace</label>
+                            name="brainwashing_machine">iNURFace
+                        </label>
+
                     <label for="screenx" class="product-radio-name">
                         <input type="radio" class="product-radio" value="ScreenX" id="screenx"
-                            name="propaganda_speaker">ScreenX</label>
+                            name="brainwashing_machine">ScreenX</label>
+
                     <label for="vrshady" class="product-radio-name">
                         <input type="radio" class="product-radio" value="VRShady" id="vrshady"
-                            name="blinders_for_life">VRShady</label>
+                            name="brainwashing_machine">VRShady</label>
                 </fieldset>
             </section>
-            <div class="form-coulmn2">
-                <form action="https://www.youtube.com/watch?v=e9dZQelULDk&ab_channel=SteveCutts" method="post">
-                    <label for="f-name">First name</label>
-                    <input type="text"
-                    id="f-name"
-                    name="firstname" placeholder="Your first name...">
-                    <label for="l-name">Last name</label>
-                    <input type="text"
-                    id="l-name"
-                    name="lastname" placeholder="Your last name...">
-                </form>
+            <div class="form-column2">
+                <label for="f-name">First name</label>
+                <input type="text" id="f-name" name="firstname" placeholder="Your first name..." required>
+                <label for="l-name">Last name</label>
+                <input type="text" id="l-name" name="lastname" placeholder="Your last name..." required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email..." required>
+                <input type="submit" name="submit" id="submit" value="Order your new tech" class="btn">
             </div>
+        </form>
+    </div>
+    <div class="information-wrapper">
+        <div class="information-container">
+            <p class="information-text">
+                *Image and illustration simulated for illustrative motivation. Authentic User Interface may be non-identical. <br>
+*TechWare products indispensable the latest megaLOL.OS (minimum version 120.666.098.) for this attribute. <br>
+*Screen arrangement adapting obtainability may differ by application. <br>
+*Accessibility of characteristic may differ by country, region, space station or planet.
+            </p>
         </div>
     </div>
-    <footer></footer>
+    <footer id="footer" class="footer-wrapper">
+        <div class="footer-container">
+            <section class="footer-intro">
+                <h1 class="footer-header">Want to know more?</h1>
+                <p class="footer-text">
+                    Contact us
+                </p>
+            </section>
+        </div>
+    </footer>
 </body>
 
 </html>
