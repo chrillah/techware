@@ -664,7 +664,8 @@ border: none;
     font-family: var(--font-fraunces);
     font-style: italic;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 3rem;
+    padding-bottom: 1rem;
 }
 
 
@@ -675,23 +676,26 @@ border: none;
     padding-bottom: 2rem;
 }
 
-@media (min-width: 400px){
+@media (min-width: 450px){
     .contact-links-container{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 700px){
+@media (min-width: 780px){
     .contact-links-container{
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
 .contact-item{
-    display: flex;
-    gap: .4rem;
-    text-decoration: none;
+    /*display: flex;*/
     padding-bottom: .1.2rem;
+}
+
+.contact-item img{
+    height: auto;
+    width: 50px;
 }
 
 .contact-item a{
@@ -707,7 +711,7 @@ border: none;
     font-weight: 600;
 }
 .corporation-thin-text{
-    font-weight: 100;
+    font-weight:lighter;
     font-style: italic;
 }
 
