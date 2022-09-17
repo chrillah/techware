@@ -221,10 +221,16 @@ ul li{
 
 .logo a img{
     margin-bottom: -.3rem;
-    max-height: 10vh;
+    max-height: 6vh;
     width: 100%;
 }
 /*Above Validated 2022-09-14*/
+
+@media (min-width:420px){
+    .logo a img{
+        max-height: 10vh;
+    }
+}
 
 
 /*===============================*/
@@ -909,6 +915,7 @@ input[type=submit]{
     font-weight: bold;
     text-align: left;
     line-height: 2rem;
+    padding-bottom: 2rem;
 }
 
 .contact-item-text span{
@@ -930,6 +937,7 @@ input[type=submit]{
 }
 
 .corporation-header{
+    font-weight: 700;
     grid-area: corp-header;
 }
 
