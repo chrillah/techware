@@ -650,11 +650,16 @@ ul li{
     }
 }
 
+
+
+
 /*===============================*/
 /* 8. Form Section*/
 /*===============================*/
+
+
+/*FIXA FORM!!!!*/
 .form-section-wrapper{
-   /* background-color: var(--bg_color5);*/
     background-color: var(--red);
 }
 .form-section-container{
@@ -694,15 +699,6 @@ ul li{
     background-color: var(--yellow);
 }
 
-/*
-#f-name,
-#l-name,
-#email,
-.form-column2 label{
-    align-self:center
-}
-
-*/
 .form-column1 label, .form-column2 label{
     font-weight: bold;
     padding: .5rem 0 .1rem 0;
@@ -714,16 +710,21 @@ ul li{
     border: none;
 }
 
-/*
-.form-column2 input[type=text]:focus,
-.form-column2 input[type=email]:focus{
-    background-color: rgba(255,255,0, .1);
-}
-*/
 
 .form-column2 input[type=email]{
     margin-bottom: 4rem;
 }
+
+@media(min-width:780px){
+
+    .form-section-container{
+        display: flex;
+    }
+}
+
+
+/*FIXA FORM!!!!*/
+
 
 /*
 .product-radio input[type=radio]{
@@ -753,12 +754,6 @@ ul li{
 }
 */
 
-@media(min-width:780px){
-
-    .form-section-container{
-        display: flex;
-    }
-}
 
 /*Above Validated 2022-09-16*/
 
@@ -845,27 +840,28 @@ ul li{
     }
 } 
 
-
+/* 
 .contact-item a{
     display: flex;
     align-items: center;
-}
+} */
 
+/*
 .contact-item img{
     height: auto;
     width: 70px;
     margin: .2rem 1rem;
 }
+*/
 
 .corporation-info a,
 .contact-item{
     color:#000000;
     text-decoration: none;
 }
-.contact-links-container a:hover,
-.contact-links-container a:focus,
-ul li a:hover,
-ul li a:focus,
+
+.contact-item-text span:hover,
+.contact-item-text span:focus,
 #copyright a:hover,
 #copyright a:focus{
     background-color: var(--bg_color4); 
@@ -875,7 +871,6 @@ ul li a:focus,
     font-weight: bold;
     text-align: left;
 }
-
 
 .contact-item-text span{
     font-style: italic;
