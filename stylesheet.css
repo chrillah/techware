@@ -397,11 +397,41 @@ ul li a{
     } 
 }
 
+
+@media (min-width: 550px){
+    .rotating-polygon{
+        width: 30%;
+        height: 50%;
+        top: 20%;
+        left: 33%;
+    }
+}
+
+
+
 @media (min-width: 666px){
     .rotating-polygon{
         width: 30%;
         height: 50%;
         top: 20%;
+        left: 33%;
+    }
+}
+
+@media (min-width: 780px){
+    .rotating-polygon{
+        width: 30%;
+        height: 70%;
+        top: 10%;
+        left: 33%;
+    }
+}
+
+@media (min-width: 900px){
+    .rotating-polygon{
+        width: 30%;
+        height: 70%;
+        top: 10%;
         left: 33%;
     }
 }
@@ -505,7 +535,7 @@ ul li a{
     display: flex;
     margin: 0 auto;
     gap:1rem;
-    padding: 2rem 0;
+    padding: 4rem 0;
     align-items: center;
 }
 
