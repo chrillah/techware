@@ -255,7 +255,7 @@ ul li{
 .hero-h1-header{
     text-align: right;
     padding: 20vh 1rem 0 1rem;
-    font-size: 4rem;
+    font-size: 3rem;
     font-kerning: auto;
 }
 
@@ -306,7 +306,16 @@ ul li{
         "hero-item3";
 }
 
+@media (min-width: 560px) {
+
+    .hero-h1-header{
+        font-size: 5rem;
+    }
+    
+}
+
 @media (min-width: 860px) {
+    
     .hero-container{
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 2fr 1fr;
