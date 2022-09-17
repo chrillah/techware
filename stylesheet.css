@@ -862,6 +862,11 @@ ul li a:hover{
     border-radius: 100px;*/
 }
 
+.contact-item-text span{
+    font-style: italic;
+    font-size: 12px;
+}
+
 
 /*Corporation information*/
 .corporation-info{
