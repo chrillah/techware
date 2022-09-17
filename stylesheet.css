@@ -29,6 +29,22 @@ Table of content
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap');
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+label,
+input[type=text],
+input[type=email],
+input[type=submit]{
+    font-family: Helvetica, sans-serif;
+}
+
+
 /*Colors and styles*/
 
 :root{
@@ -39,6 +55,7 @@ Table of content
     --bg_color3: #FF90E9;
     --bg_color4: #23A094;
     --bg_color5: #E24530;
+
     --grey:#7F7F7F;
     --purple:#D1B4F8;
     --yellow: #F9E179;
@@ -64,8 +81,6 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*TEST*/
-    font-family: Helvetica, sans-serif;
 }
 
 
@@ -90,26 +105,22 @@ body{
   touch-action: manipulation;
 }
 
-.btn-vers-1{
-    background-color: var(--bg_color1);
-    border: 4px solid var(--bg_color2);
-    /*border: 10px solid var(--bg_color2);*/
-}
-
-.btn-vers-2{
+.btn{
     background-color: var(--bg_color1);
     border: 4px solid var(--purple);
 }
 
-
-
-.btn:hover {
+.btn:hover,
+.btn:focus {
     color: var(--bg_color4);
+    border: 4px solid var(--bg_color2);
 }
 
 .btn:active {
   transform: translate(2px, 2px);
 }
+
+
 
 
 /*===============================*/
@@ -131,25 +142,23 @@ ul{
 ul li{
     list-style: none;
     padding: 0 1.2rem;
-    /*padding: .5rem 1.2rem;*/
+    padding: .5rem 1.2rem;
     text-align: right;
 }
 
 ul li a{
     text-decoration: none;
-    /*margin: .1rem 0;*/
+    margin: .1rem 0;
 }
 
 
 .nav-bar-links ul li a:hover{
     color: var(--bg_color4);
-    /*background-color: var(--bg_color2);
-    border-radius: 100px;*/
 }
-ul li a:hover{
-    color: var(--purple);
-    /*background-color: var(--bg_color2);
-    border-radius: 100px;*/
+
+.nav-bar-links ul li a:focus{
+    color: var(--bg_color1);
+    background-color: var(--bg_color4); 
 }
 
 /*Above Validated 2022-09-12*/
@@ -622,6 +631,12 @@ ul li a:hover{
     max-width: 600px;
 }
 
+#f-name:focus,
+#l-name:focus,
+#email:focus{
+    background-color: var(--yellow);
+}
+
 /*
 #f-name,
 #l-name,
@@ -774,13 +789,19 @@ ul li a:hover{
     color:#ffffff;
 }
 
+ul li a:hover{
+    color: var(--bg_color4);
+    /*background-color: var(--bg_color2);
+    border-radius: 100px;*/
+}
 
 .corporation-info{
     padding-bottom: 2rem;
 }
 
 .corporation-text{
-    font-weight: 600;
+    font-size: 12px;
+    /*font-weight: 600;*/
 }
 .corporation-thin-text{
     font-weight:lighter;
