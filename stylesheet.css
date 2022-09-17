@@ -99,6 +99,9 @@ body{
     box-sizing: border-box;
 }
 
+ul li{
+    list-style: none;
+}
 
 /*===============================*/
 /*3. Buttons*/
@@ -150,19 +153,18 @@ body{
    /* flex-wrap: wrap;*/
 }
 
-ul{
+.nav-bar-links ul{
     margin-left: auto;
     display: flex;
 }
 
-ul li{
-    list-style: none;
+.nav-bar-links ul li{
     padding: 0 1.2rem;
     padding: .5rem 1.2rem;
     text-align: right;
 }
 
-ul li a{
+.nav-bar-links ul li a{
     text-decoration: none;
     margin: .1rem 0;
 }
@@ -357,6 +359,7 @@ ul li a{
 
 /*Rotating polygon - Keep it?*/
 
+
 .rotating-polygon{
     background-color: var(--purple);
     clip-path: polygon(50% 0%, 39% 20%, 13% 7%, 21% 30%, 0 30%, 20% 46%, 0 62%, 21% 64%, 11% 85%, 33% 79%, 41% 99%, 57% 83%, 78% 93%, 78% 74%, 100% 73%, 81% 56%, 100% 45%, 76% 42%, 98% 26%, 75% 28%, 78% 5%, 59% 19%);
@@ -366,17 +369,6 @@ ul li a{
     width: 50%;
     height: 50%;
 
-    /*left: 50%;
-    transform: translate(-50%, 0);*/
-    /*
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    height: 300px;
-    margin:-160px 0 0 -160px;
-    */
-
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
@@ -384,15 +376,19 @@ ul li a{
 }
 
 @-moz-keyframes spin { 
-    100% { -moz-transform: rotate(360deg); } 
+    100% {
+        -moz-transform: rotate(360deg); 
+    } 
 }
 @-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(360deg); } 
+    100% {
+        -webkit-transform: rotate(360deg);
+    } 
 }
 @keyframes spin { 
     100% { 
-    -webkit-transform: rotate(360deg); 
-    transform:rotate(360deg); 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
     } 
 }
 
@@ -434,6 +430,7 @@ ul li a{
         left: 33%;
     }
 }
+
 
 .slideshow-container img{
     display: flex;
@@ -522,9 +519,9 @@ ul li a{
     padding: 1rem 2rem;
     border-radius: 10px;
     border: var(--border-style);
-    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
 }
 
 
@@ -544,9 +541,9 @@ ul li a{
     width: 95%;
     border: var(--border-style);
     border-radius: 10px;
-    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
 }
 
 .galleri-item{
@@ -631,6 +628,7 @@ ul li a{
 
 .about-text{
     max-width: 400px;
+    line-height: 1.5em;
 }
 
 .about-column1,
@@ -832,8 +830,6 @@ ul li a{
 
 .contact-item{
     margin: 0 auto;
-    /*display: grid;
-    grid-template-columns: 1fr 3fr;*/
     max-width: 220px;
 }
 
