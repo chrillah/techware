@@ -530,6 +530,7 @@ ul li{
     gap:1rem;
     padding: 4rem 0;
     align-items: center;
+    max-width: 80vw;
 }
 
 .galleri-img{
@@ -820,7 +821,7 @@ input[type=submit]{
 .footer-header{
     font-family: var(--font-fraunces);
     font-style: italic;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -882,6 +883,7 @@ input[type=submit]{
 .contact-item-text{
     font-weight: bold;
     text-align: left;
+    line-height: 2rem;
 }
 
 .contact-item-text span{
