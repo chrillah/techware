@@ -662,10 +662,13 @@ ul li{
 .form-section-wrapper{
     background-color: var(--red);
 }
+
 .form-section-container{
-    margin:0 3rem;
-    padding: 4rem 0;
+    margin: 0 2vw;
+    /* margin:0 3rem;
+    padding: 4rem 0; */
 }
+
 .form-header{
     font-size: 4rem;
     font-kerning: auto;
@@ -685,12 +688,12 @@ ul li{
 
 
 .form-column2{
-    width:100%;
+    /* width:100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 600px;
+    max-width: 600px; */
 }
 
 #f-name:focus,
@@ -718,9 +721,15 @@ ul li{
 @media(min-width:780px){
 
     .form-section-container{
-        display: flex;
+        /* display: flex; */
+        display: grid;
     }
 }
+
+
+
+
+
 
 
 /*FIXA FORM!!!!*/
