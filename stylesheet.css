@@ -752,13 +752,14 @@ ul li a{
     min-height: 70vh;
     border: var(--border-style);
 }
+
 .information-container{
-    padding: 2rem;
+    padding:0 2vw;
 }
 
 .information-text{
-    max-width: 900px;
     font-weight: bold;
+    line-height: 24px;
 }
 
 /*Above Validated 2022-09-16*/
@@ -856,3 +857,4 @@ ul li a:hover{
 }
 
 /*Above Validated 2022-09-16*/
+/*Above Validated 2022-09-17*/
