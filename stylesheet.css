@@ -25,11 +25,13 @@ Table of content
 
 7. About Section
 
-8. Form Section
+8. Scrolling Logo
 
-9. Information
+9. Form Section
 
-10. Footer
+10. Information
+
+11. Footer
 - Corporation information
 
 ===============================*/
@@ -716,11 +718,45 @@ ul li{
     }
 }
 
+/*===============================*/
+/* 8. Scrolling text*/
+/*===============================*/
 
+.sliding-logo-container{
+    /*This shit will make so that image or objects outside the visual, doesn't 
+    break the layout*/
+    overflow: hidden;
+}
 
+.sliding-logo{
+    background-image: url(img/techware_logo.png);
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    height: 3rem;
+    width: 5076px;
+    animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+
+    0%{
+        transform:translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(-1692px,0,0);
+    }
+    /* from {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(-300%);
+              transform: translateX(-300%);
+    } */
+}
 
 /*===============================*/
-/* 8. Form Section*/
+/* 9. Form Section*/
 /*===============================*/
 
 
@@ -844,7 +880,7 @@ input[type=submit]{
 
 
 /*===============================
-9. Information
+10. Information
 ===============================*/
 
 .information-wrapper{
@@ -870,7 +906,7 @@ input[type=submit]{
 /*Above Validated 2022-09-16*/
 
 /*===============================*/
-/* 10. Footer */
+/* 11. Footer */
 /*===============================*/
 
 .footer-wrapper{
