@@ -218,12 +218,13 @@ ul li{
 
 /*Logo*/
 
-.logo:hover{ 
+.logo img:hover{ 
     background-color: var(--bg_color4);
 }
 
 .logo a img{
-    margin-bottom: -.3rem;
+    margin:.1rem 0 -.1rem .1rem;
+    /* margin-bottom: -.3rem; */
     max-height: 6vh;
     width: 100%;
 }
@@ -855,6 +856,7 @@ input[type=submit]{
 .footer-wrapper{
     background-color: var(--purple);
     /*min-height: 10vh;*/
+    padding-bottom: 1rem;
 }
 
 .footer-container{
@@ -977,6 +979,8 @@ input[type=submit]{
 #copyright{
     grid-area: copyright;
     padding-top: 1rem;
+    font-size: smaller;
+    font-weight: 700;
 }
 
 .corporation-info-logo{
@@ -986,6 +990,11 @@ input[type=submit]{
 
 .corporation-info-logo img{
     max-width: 40px;
+}
+
+.corporation-info-logo img:hover,
+.corporation-info-logo img:focus{
+    background-color: var(--bg_color4);
 }
 
 /*Above Validated 2022-09-16*/
