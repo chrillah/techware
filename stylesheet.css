@@ -297,7 +297,6 @@ ul li{
 
 /*Above Validated 2022-09-14*/
 .hero-item2{
-    /* background: url("img/inurface_small_model.png") center bottom no-repeat,url("img/techware_gridgraphic.png") bottom left no-repeat; */
     background-image: url("img/inurface_small_model.png");
     background-color: var(--bg_color3);
     background-repeat: no-repeat;
@@ -329,7 +328,7 @@ ul li{
 .hero-container{
     display: grid;
     grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr 1fr ;
+        grid-template-rows: 2fr 1fr 1fr ;
         grid-template-areas: 
         "hero-item1"
         "hero-item2"
