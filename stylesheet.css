@@ -570,14 +570,14 @@ ul li{
 
 .main-galleri-container{
     padding: 2rem 0;
-    margin:0 1vw;
+    margin:0 3vw;
 }
 
 .galleri-information{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     padding: 1rem 1rem;
     border: var(--border-style);
@@ -592,13 +592,12 @@ ul li{
     gap:1rem;
     padding: 1rem 0 2rem 0;
     align-items: center;
-    max-width: 90vw;
 }
 
 .galleri-img{
     background-color: var(--bg_color3);
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
     border: var(--border-style);
 }
 
@@ -607,9 +606,27 @@ ul li{
 }
 .galleri-item-rev{
     flex-direction: column-reverse;
+/* 
+    max-width: 30rem; */
 }
 
+@media (min-width:600px) {
+    .galleri-item,
+    .galleri-item-rev{
+        max-width: 30rem;
+    }
+}
 @media (min-width:700px){
+
+    .galleri-img,
+    .galleri-information{
+        width:95;
+    }
+
+    .galleri-item,
+    .galleri-item-rev{
+        max-width: 90vw;
+    }
 
     .galleri-img{
         width: 80%;
@@ -738,29 +755,18 @@ ul li{
 }
 
 @keyframes slide {
-
     0%{
         transform:translate3d(0,0,0);
     }
     100%{
         transform: translate3d(-1692px,0,0);
     }
-    /* from {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    to {
-      -webkit-transform: translateX(-300%);
-              transform: translateX(-300%);
-    } */
 }
 
 /*===============================*/
 /* 9. Form Section*/
 /*===============================*/
 
-
-/*FIXA FORM!!!!*/
 .form-section-wrapper{
     background-color: var(--red);
 }
