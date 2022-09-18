@@ -889,8 +889,7 @@ input[type=submit]{
     grid-template-rows: repeat(4, 1fr);
     grid-template-rows: none;
     padding-bottom: 2rem;
-    margin:2rem auto;
-    border-bottom: var(--border-style);
+    margin:2rem 2rem;
 }
 
 .contact-item{
@@ -952,7 +951,8 @@ input[type=submit]{
 
 /*Corporation information*/
 .corporation-info{
-    padding-bottom: 1rem;
+    border-top: var(--border-style);
+    padding: 1rem 0;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
