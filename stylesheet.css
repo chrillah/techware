@@ -648,10 +648,11 @@ ul li{
 .about-wrapper{
     background-color: var(--purple);
     border: var(--border-style);
+    padding: 3rem 0;
 }
 .about-container{
     margin:0 1vw;
-    padding: 3vh 1vw;
+    padding: 0 1vw;
 }
 
 
@@ -836,6 +837,7 @@ input[type=submit]{
     align-items: center;
     min-height: 30vh;
     border: var(--border-style);
+    padding: 3rem 0;
 }
 
 .information-container{
