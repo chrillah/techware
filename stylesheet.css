@@ -76,6 +76,7 @@ input[type=submit]{
     --purple:#D1B4F8;
     --yellow: #F9E179;
     --red: #EC706B;
+    --whitish: #FAF5E7;
 
     --border-style: solid 1px var(--border_color);
     --header-font-weight: 500;
@@ -97,7 +98,7 @@ input[type=submit]{
 body{
     height: 100%;
     overflow-x: hidden;
-    background-color: var(--bg_color1);
+    background-color: var(--whitish);
 }
 
 *{
@@ -132,7 +133,7 @@ ul li{
 }
 
 .btn{
-    background-color: var(--bg_color1);
+    background-color: var(--whitish);
     border: 4px solid var(--purple);
 }
 
@@ -201,7 +202,7 @@ ul li{
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: var(--bg_color1);
+    background-color: var(--whitish);
     top: 0;
     left: 0;
     position: fixed;
@@ -567,7 +568,7 @@ ul li{
 
 .galleri-item,
 .galleri-item-rev{
-    background-color: var(--bg_color1);;
+    background-color: var(--whitish);
     display: flex;
     margin: 0 auto;
     gap:1rem;
@@ -741,7 +742,7 @@ ul li{
     margin:0 auto;
     padding: 1rem;
     display: grid;
-    background-color: #ffffff;
+    background-color: var(--whitish);
     border: var(--border-style);
     max-width: 30rem;
 }
