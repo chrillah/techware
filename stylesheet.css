@@ -170,8 +170,9 @@ ul li{
 }
 
 .nav-bar-links ul li{
-    padding: 0 1.2rem;
-    padding: .5rem 1.2rem;
+    /* padding: 0 1.2rem; */
+    /* padding: .5rem 1.2rem; */
+    padding-left: 2rem;
     text-align: right;
 }
 
@@ -182,12 +183,16 @@ ul li{
 
 
 .nav-bar-links ul li a:hover{
-    background-color: var(--bg_color4); 
+    /* background-color: var(--bg_color4);  */
     color: #000000;
+    transform: translate(-3px, -3px);
+    box-shadow: var(--border_color) 7px 7px 0 0;
 }
 
 .nav-bar-links ul li a:focus{
-    background-color: var(--bg_color4); 
+    /* background-color: var(--bg_color4);  */
+    transform: translate(2px, 2px);
+  box-shadow: var(--border_color) 2px 2px 0 0;
 }
 
 /*Above Validated 2022-09-12*/
@@ -210,6 +215,7 @@ ul li{
 }
 
 .nav-container{
+    margin: 0 1vw;
     max-width: 1200px;
     width: 100%;
 }
@@ -226,12 +232,18 @@ ul li{
 .logo a img{
     margin:.1rem 0 -.1rem .1rem;
     /* margin-bottom: -.3rem; */
-    max-height: 3vh;
+    max-height: 6vh;
     max-width: 100%;
 }
 /*Above Validated 2022-09-14*/
 
-@media (min-width:420px){
+@media (min-width:380px){
+    .logo a img{
+        max-height: 8vh;
+    }
+}
+
+@media (min-width:400px){
     .logo a img{
         max-height: 10vh;
     }
@@ -561,7 +573,7 @@ ul li{
     align-items: center;
     width: 95%;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border: var(--border-style);
 }
 
@@ -574,7 +586,7 @@ ul li{
     gap:1rem;
     padding: 1rem 0 2rem 0;
     align-items: center;
-    max-width: 80vw;
+    max-width: 90vw;
 }
 
 .galleri-img{
@@ -625,7 +637,7 @@ ul li{
 
 .product-header{
     text-align: center;
-    padding: .3rem 0;
+    padding: 1.1rem 0 .8rem 0;
     font-family: var(--font-fraunces);
     font-style: italic;
 }
@@ -832,7 +844,8 @@ input[type=submit]{
 ===============================*/
 
 .information-wrapper{
-    background-color: var(--bg_color4);
+    /* background-color: var(--bg_color4); */
+    background-color: var(--purple);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -857,7 +870,7 @@ input[type=submit]{
 /*===============================*/
 
 .footer-wrapper{
-    background-color: var(--purple);
+    background-color: var(--bg_color4);
     /*min-height: 10vh;*/
     padding-bottom: 1rem;
 }
