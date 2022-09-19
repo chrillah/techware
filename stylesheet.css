@@ -297,6 +297,9 @@ ul li{
     background-size: contain;
     position: relative; */
     grid-area: hero-item2;
+    background-color: var(--bg_color3);
+    /* height: auto;
+    max-width: 100%; */
 }
 
 .hero-item3{
@@ -339,7 +342,8 @@ ul li{
 @media (min-width: 860px) {
     
     .hero-container{
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 2fr 600px;
+        /* grid-template-columns: 2fr 1fr; */
         grid-template-rows: 2fr 1fr;
         grid-template-areas: 
         "hero-item1 hero-item2"
@@ -349,7 +353,8 @@ ul li{
 
 @media (min-width: 980px) {
     .hero-container{
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 600px;
+        /* grid-template-columns: 2fr 1fr; */
         grid-template-rows: 2fr 1fr;
         grid-template-areas: 
         "hero-item1 hero-item2"
