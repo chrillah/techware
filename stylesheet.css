@@ -290,16 +290,13 @@ ul li{
 
 /*Above Validated 2022-09-14*/
 .hero-item2{
-    /* background-image: url("img/techware_hero_img2.svg");
+    background-image: url("img/techware_hero_img2.svg");
     background-color: var(--bg_color3);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
-    position: relative; */
+    position: relative;
     grid-area: hero-item2;
-    background-color: var(--bg_color3);
-    /* height: auto;
-    max-width: 100%; */
 }
 
 .hero-item3{
@@ -324,11 +321,11 @@ ul li{
 .hero-container{
     display: grid;
     grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 1fr ;
-        grid-template-areas: 
-        "hero-item1"
-        "hero-item2"
-        "hero-item3";
+    grid-template-rows: 2fr 1fr 1fr ;
+    grid-template-areas: 
+    "hero-item1"
+    "hero-item2"
+    "hero-item3";
 }
 
 @media (min-width: 560px) {
@@ -342,8 +339,7 @@ ul li{
 @media (min-width: 860px) {
     
     .hero-container{
-        grid-template-columns: 2fr 600px;
-        /* grid-template-columns: 2fr 1fr; */
+        grid-template-columns: 2fr 1fr;
         grid-template-rows: 2fr 1fr;
         grid-template-areas: 
         "hero-item1 hero-item2"
@@ -353,9 +349,8 @@ ul li{
 
 @media (min-width: 980px) {
     .hero-container{
-        grid-template-columns: 1fr 600px;
-        /* grid-template-columns: 2fr 1fr; */
-        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 2fr 1fr; 
+        grid-template-rows: 2fr 1fr; 
         grid-template-areas: 
         "hero-item1 hero-item2"
         "hero-item1 hero-item3";
@@ -374,6 +369,7 @@ ul li{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width:100%;
     background-color: var(--red);
 }
@@ -392,6 +388,13 @@ ul li{
     margin: 0 1rem;
 }
 
+.main-intro-img{
+    height: auto;
+    max-width: 100%;
+    border: var(--border-style);
+}
+
+/*Above Validated 2022-09-19*/
 
 /*Slideshow Bob*/
 
