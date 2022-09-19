@@ -290,12 +290,12 @@ ul li{
 
 /*Above Validated 2022-09-14*/
 .hero-item2{
-    background-image: url("img/techware_hero_img2.svg");
+    /* background-image: url("img/techware_hero_img2.svg");
     background-color: var(--bg_color3);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
-    position: relative;
+    position: relative; */
     grid-area: hero-item2;
 }
 
