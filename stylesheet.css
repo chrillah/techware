@@ -12,7 +12,7 @@ Table of content
 3. Buttons
 
 4. Nav-bar
-- nav-wrapper % container
+- nav-wrapper
 - logo
 
 5. Hero
@@ -148,6 +148,10 @@ ul li{
 
 .btn:hover,
 .btn:focus {
+    /* animation-name: unfold;
+    animation-duration: .2s;
+    animation-fill-mode: forwards; */
+    /* animation-duration: .1s; */
     background-color: var(--purple);
     border: 4px solid #000000;
     transform: translate(-3px, -3px);
@@ -161,7 +165,24 @@ ul li{
   box-shadow: var(--border_color) 2px 2px 0 0;
 }
 
+/* @keyframes unfold{
+    from{
+        background-color: var(--whitish);
+        border: 4px solid var(--purple);
+        box-shadow: var(--border_color) 4px 4px 0 0;
+        -webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+    }
 
+    to{
+        background-color: var(--purple);
+        border: 4px solid #000000;
+        transform: translate(-3px, -3px);
+        box-shadow: var(--border_color) 7px 7px 0 0;
+        -webkit-box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+    }
+} */
 
 /*===============================*/
 /*4.  Nav-bar*/
@@ -221,7 +242,7 @@ ul li{
 }
 
 .nav-container{
-    margin: 0 1vw;
+    margin: 0 2vw 0 .1vw;
     max-width: 1200px;
     width: 100%;
 }
