@@ -230,14 +230,31 @@ ul li{
 
 /*Logo*/
 
-.logo img:hover{ 
+.logo-unfold{
+    display: none;
+}
+
+.logo img:hover, 
+.logo-unfold img:hover{ 
     background-color: var(--purple);
 }
 
-.logo a img{
+.logo a img,
+.logo-unfold a img{
     margin:.1rem 0 -.1rem .1rem;
     max-height: 3rem;
     max-width: 100%;
+}
+
+@media (min-width: 560px){
+
+    .logo-unfold{
+        display: block;
+        margin-right: auto;
+    }
+    .logo a img{
+        display: none;
+    }
 }
 
 @media (min-width: 768px){
