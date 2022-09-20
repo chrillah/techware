@@ -67,20 +67,14 @@ input[type=submit]{
 /*Colors and styles*/
 
 :root{
-    --text_color1: #000000;
-    --border_color: #000000;
-    --bg_color1: #ffffff;
-    --bg_color2: #FFC900;
-    --bg_color3: #FF90E9;
-    --bg_color4: #23A094;
-    --bg_color5: #E24530;
-
-    --grey:#7F7F7F;
+    --text_color: #000000;
+    --pink: #FF90E9;
+    --green: #23A094;
     --purple:#D1B4F8;
-    --yellow: #F9E179;
     --red: #EC706B;
     --whitish: #FAF5E7;
-
+    --yellow: #F9E179;
+    --border_color: var(--text_color);
     --border-style: solid 1px var(--border_color);
     --header-font-weight: 500;
     --font-fraunces:'Fraunces', serif;
@@ -127,7 +121,7 @@ ul li{
   box-shadow: var(--border_color) 4px 4px 0 0;
   -webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
   -moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
-  color: var(--text_color1);
+  color: var(--text_color);
   cursor: pointer;
   display: inline-block;
   font-weight: bolder;
@@ -143,7 +137,8 @@ ul li{
 
 .btn{
     background-color: var(--whitish);
-    border: 4px solid var(--purple);
+    /* border: 4px solid var(--purple); */
+    border: 4px solid var(--border_color);
 }
 
 .btn:hover,
@@ -204,7 +199,7 @@ ul li{
 
 /*Nav-wrapper & Container*/
 .nav-bar-links ul li a{
-    color: var(--text_color1);
+    color: var(--text_color);
     font-weight: bolder;
 }
 
@@ -223,6 +218,12 @@ ul li{
     margin: 0 2vw 0 .1vw;
     max-width: 1400px;
     width: 100%;
+}
+
+@media (min-width:375px){
+    .nav-bar-links ul li a{
+        padding: 0 .4rem;
+    }
 }
 
 
@@ -285,7 +286,7 @@ ul li{
 
 .hero-item2{
     background-image: url("img/techware_hero_img2.svg");
-    background-color: var(--bg_color3);
+    background-color: var(--pink);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
@@ -298,7 +299,7 @@ ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--bg_color4);
+    background-color: var(--green);
     grid-area: hero-item3;
     padding-bottom: 2rem;
 }
@@ -393,6 +394,7 @@ ul li{
     }
     .main-intro-img{
         object-fit: cover;
+        background-color: var(--whitish);
     }
 }
 
@@ -546,7 +548,7 @@ ul li{
 }
 
 .galleri-img{
-    background-color: var(--bg_color3);
+    background-color: var(--pink);
     margin: 0 auto;
     width: 100%;
     border: var(--border-style);
@@ -643,7 +645,6 @@ ul li{
     justify-content: center;
 }
 .about-container{
-    max-width: 1400px;
     margin:0 1vw;
     padding: 0 1vw;
 }
@@ -842,7 +843,7 @@ input[type=submit]{
 .footer-wrapper{
     display: flex;
     justify-content: center;
-    background-color: var(--bg_color4);
+    background-color: var(--green);
     padding-bottom: 1rem;
 }
 
@@ -989,3 +990,5 @@ input[type=submit]{
 /*Above Validated 2022-09-16*/
 /*Above Validated 2022-09-17*/
 /*Above Validated 2022-09-18*/
+/*Above Validated 2022-09-19*/
+/*Above Validated 2022-09-20*/
