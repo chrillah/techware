@@ -104,6 +104,10 @@ body{
     background-color: var(--whitish);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -127,7 +131,7 @@ ul li{
   cursor: pointer;
   display: inline-block;
   font-weight: bolder;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 1rem 0;
   padding: 0 10px;
   line-height: 2rem;
   text-align: center;
@@ -156,6 +160,8 @@ ul li{
   transform: translate(2px, 2px);
   box-shadow: var(--border_color) 2px 2px 0 0;
 }
+
+
 
 /*===============================*/
 /*4.  Nav-bar*/
@@ -394,6 +400,24 @@ ul li{
     border: var(--border-style);
 }
 
+
+
+@media (min-width: 768px){
+
+    .main-intro-img{
+        border: none;
+    }
+
+    .img-container{
+        overflow: hidden;
+        height: 300px;
+        border: var(--border-style);
+    }
+    .main-intro-img{
+        object-fit: cover;
+    }
+}
+
 /*Above Validated 2022-09-19*/
 
 /*Slideshow Bob*/
@@ -605,7 +629,7 @@ ul li{
 
 .product-header{
     text-align: center;
-    padding: 1.1rem 0 .8rem 0;
+    padding: .1rem 0 .4rem 0;
     /*Leave it?*/
     /* font-family: var(--font-fraunces); */
     /* font-style: italic; */
@@ -614,7 +638,7 @@ ul li{
 .product-text{
     font-size: .8rem;
     line-height: 1.2rem;
-    padding-bottom: 1rem;
+    padding-bottom: .4rem;
 }
 
 .product-spec{
