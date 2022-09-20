@@ -242,6 +242,11 @@ ul li{
 }
 
 @media (min-width: 768px){
+
+    .logo a img{
+        max-height: 3rem;
+    }
+
     .logo a{
         padding-left: 1rem;
     }
