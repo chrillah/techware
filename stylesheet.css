@@ -243,7 +243,7 @@ ul li{
 
 .nav-container{
     margin: 0 2vw 0 .1vw;
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
 }
 
@@ -258,23 +258,29 @@ ul li{
 
 .logo a img{
     margin:.1rem 0 -.1rem .1rem;
-    max-height: 6vh;
+    max-height: 5vh;
     max-width: 100%;
 }
 
 /*Above Validated 2022-09-14*/
+/*
 
-@media (min-width:380px){
+/*CHANGED 20/9*/
+/*
+@media (min-width:374px){
     .logo a img{
         max-height: 8vh;
     }
 }
-
-@media (min-width:400px){
+*/
+/*CHANGED 20/9*/
+/*
+@media (min-width:425px){
     .logo a img{
         max-height: 10vh;
     }
 }
+*/
 
 /*===============================*/
 /*5. Hero*/
@@ -363,7 +369,8 @@ ul li{
     
 }
 
-@media (min-width: 860px) {
+/*CHANGED 20/9*/
+@media (min-width: 425px) {
     
     .hero-container{
         grid-template-columns: 2fr 1fr;
@@ -374,7 +381,7 @@ ul li{
     }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 1024px) {
     .hero-container{
         grid-template-columns: 2fr 1fr; 
         grid-template-rows: 2fr 1fr; 
@@ -519,11 +526,11 @@ ul li{
 
 }
 
-@media (min-width: 666px){
+/* @media (min-width: 666px){
     .slides-text{
         padding: 1rem 3rem;
     }
-}
+} */
 
 .rotating-polygon{
     background-image: url(img/techware_spiralgraphic.png);
@@ -564,7 +571,16 @@ ul li{
 
 /*Main-Galleri*/
 
+.main-galleri-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .main-galleri-container{
+    width: 100%;
+    max-width: 1400px;
     padding: 2rem 0;
     margin:0 3vw;
 }
@@ -680,8 +696,11 @@ ul li{
     background-color: var(--purple);
     border: var(--border-style);
     padding: 3rem 0;
+    display: flex;
+    justify-content: center;
 }
 .about-container{
+    max-width: 1400px;
     margin:0 1vw;
     padding: 0 1vw;
 }
@@ -762,9 +781,12 @@ ul li{
 
 .form-section-wrapper{
     background-color: var(--red);
+    display: flex;
+    justify-content: center;
 }
 
 .form-section-container{
+    max-width: 1400px;
     margin: 0 3vw;
     padding: 5rem 0;
 }
@@ -871,11 +893,15 @@ input[type=submit]{
 /*===============================*/
 
 .footer-wrapper{
+    display: flex;
+    justify-content: center;
     background-color: var(--bg_color4);
     padding-bottom: 1rem;
 }
 
 .footer-container{
+    width: 100%;
+    max-width: 1400px;
     margin: 0 3vw;
     padding: 3rem 0 .1rem 0;
 }
