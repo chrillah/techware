@@ -241,6 +241,12 @@ ul li{
     max-width: 100%;
 }
 
+@media (min-width: 768px){
+    .logo a{
+        padding-left: 1rem;
+    }
+}
+
 /*Above Validated 2022-09-14*/
 
 /*===============================*/
@@ -774,7 +780,7 @@ input[type=submit]{
 #f-name:focus,
 #l-name:focus,
 #email:focus{
-    background-color: var(--yellow);
+    background-color: var(--red);
 }
 
 .form-column1 label, .form-column2 label{
@@ -784,10 +790,10 @@ input[type=submit]{
 
 .form-column2 input[type=text],
 .form-column2 input[type=email]{
+    font-weight: bold;
     padding:.4rem .1rem;
     border: var(--border-style);
 }
-
 
 .form-column2 input[type=email]{
     margin-bottom: 1rem;
@@ -803,10 +809,6 @@ input[type=submit]{
     .form-column2{
         max-width: 500px;
     }
-}
-
-.product-radio-name input[type=radio]{
-    margin: 0 1rem;
 }
 
 /*Above Validated 2022-09-16*/
