@@ -314,12 +314,29 @@ ul li{
 
 .hero-item2{
     background-image: url("img/techware_hero_img2.svg");
-    background-color: var(--pink);
+    background-color: var(--yellow);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
     position: relative;
     grid-area: hero-item2;
+    animation-name: color-switch;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes color-switch{
+    0%{
+        background-color: var(--yellow);
+    }
+
+    50%{
+        background-color: var(--pink);
+    }
+
+    100%{
+        background-color: var(--yellow);
+    }
 }
 
 .hero-item3{
