@@ -21,7 +21,7 @@ Table of content
 - Main-intro
 - Slideshow "Bob"
 - Rotating-polygon
-- Main-galleri
+- Main-product
 
 7. About Section
 
@@ -314,7 +314,7 @@ ul li{
 
 .hero-item2{
     background-image: url("img/techware_hero_img2.svg");
-    background-color: var(--yellow);
+    background-color: var(--pink);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
@@ -567,22 +567,22 @@ ul li{
 
 /*Above Validated 2022-09-15*/
 
-/*Main-Galleri*/
+/*Main-product*/
 
-.main-galleri-wrapper{
+.main-product-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.main-galleri-container{
+.main-product-container{
     max-width: 1400px;
     padding: 2rem 0;
     margin:0 3vw;
 }
 
-.galleri-information{
+.product-information{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -592,8 +592,8 @@ ul li{
     border: var(--border-style);
 }
 
-.galleri-item,
-.galleri-item-rev{
+.product-item,
+.product-item-rev{
     background-color: var(--whitish);
     display: flex;
     margin: 0 auto;
@@ -602,25 +602,25 @@ ul li{
     align-items: center;
 }
 
-.galleri-img{
+.product-img{
     background-color: var(--pink);
     margin: 0 auto;
     width: 100%;
     border: var(--border-style);
 }
 
-.galleri-item{
+.product-item{
     flex-direction: column;
 }
 
-.galleri-item-rev{
+.product-item-rev{
     flex-direction: column-reverse;
 }
 
 @media (min-width:600px) {
 
-    .galleri-item,
-    .galleri-item-rev{
+    .product-item,
+    .product-item-rev{
         max-width: 30rem;
     }
 
@@ -628,21 +628,21 @@ ul li{
 
 @media (min-width:768px){
 
-    .galleri-img,
-    .galleri-information{
+    .product-img,
+    .product-information{
         width:95%;
     }
 
-    .galleri-item,
-    .galleri-item-rev{
+    .product-item,
+    .product-item-rev{
         max-width: 90vw;
     }
 
-    .galleri-img{
+    .product-img{
         width: 80%;
     }
 
-    .galleri-information{
+    .product-information{
         width: 80%;
     }
 
@@ -650,16 +650,16 @@ ul li{
 
 @media (min-width:880px){
 
-    .galleri-item,
-    .galleri-item-rev{
+    .product-item,
+    .product-item-rev{
         flex-direction: row;
     }
 
-    .galleri-img{
+    .product-img{
         width: 50%;
     }
 
-    .galleri-information{
+    .product-information{
         max-width: 500px;
     }
 
@@ -667,7 +667,7 @@ ul li{
 
 @media (min-width:980px){
 
-    .galleri-img{
+    .product-img{
         width: 40%;
     }
     
@@ -763,7 +763,7 @@ ul li{
 }
 
 .sliding-logo{
-    background-image: url(img/techware_logo.png);
+    background-image: url(img/techware_logo_pattern.png);
     background-repeat: repeat-x;
     background-size: auto 100%;
     height: 4rem;
@@ -832,6 +832,7 @@ ul li{
 input[type=submit]{
     max-width: 6rem;
     margin-left: auto;
+    width: 100%;
 }
 
 #f-name:focus,
@@ -1056,3 +1057,4 @@ input[type=submit]{
 /*Above Validated 2022-09-18*/
 /*Above Validated 2022-09-19*/
 /*Above Validated 2022-09-20*/
+/*Above Validated 2022-09-22*/
