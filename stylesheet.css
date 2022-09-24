@@ -382,7 +382,7 @@ ul li{
     
     .hero-container{
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
         grid-template-areas: 
         "hero-item1 hero-item2"
         "hero-item3 hero-item3";
