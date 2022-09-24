@@ -381,7 +381,7 @@ ul li{
 @media (min-width: 768px) {
     
     .hero-container{
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr 1fr;
         grid-template-areas: 
         "hero-item1 hero-item2"
@@ -390,7 +390,7 @@ ul li{
 
 }
 
-@media (min-width: 980px) {
+@media (min-width: 1020px) {
     
     .hero-container{
         grid-template-columns: 1fr 1fr;
