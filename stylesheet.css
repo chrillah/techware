@@ -373,6 +373,7 @@ img{
 /*Above Validated 2022-09-14*/
 
 .hero-container{
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr 1fr ;
