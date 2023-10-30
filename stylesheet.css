@@ -112,6 +112,11 @@ ul li{
     list-style: none;
 }
 
+img{
+    height: auto;
+    max-width: 100%
+}
+
 /*===============================*/
 /*3. Buttons*/
 /*===============================*/
@@ -125,7 +130,7 @@ ul li{
   cursor: pointer;
   display: inline-block;
   font-weight: bolder;
-  margin: 1.5rem 0 1rem 0;
+  margin: 1rem 0;
   padding: 0 10px;
   line-height: 2rem;
   text-align: center;
@@ -613,112 +618,110 @@ ul li{
 }
 
 .main-product-container{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 3rem;
     max-width: 1400px;
     padding: 2rem 0;
-    margin:0 3vw;
-}
-
-.product-information{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    border: var(--border-style);
-}
-
-.product-item,
-.product-item-rev{
-    background-color: var(--whitish);
-    display: flex;
-    margin: 0 auto;
-    gap:1rem;
-    padding: 1rem 0 2rem 0;
-    align-items: center;
-    max-width: 20rem;
-}
-
-.product-img{
-    background-color: var(--pink);
-    margin: 0 auto;
-    width: 100%;
-    border: var(--border-style);
+    margin: 3rem 3vw;
 }
 
 .product-item{
-    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--whitish);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: var(--border-style);
+    height: 70vh;
+    /* max-height: 800px; */
 }
 
-.product-item-rev{
-    flex-direction: column-reverse;
-}
-
-@media (min-width:600px) {
-
-    .product-item,
-    .product-item-rev{
-        /* max-width: 30rem; */
-    }
-
-}
-
-@media (min-width:768px){
-
-    .product-img,
-    .product-information{
-        width:95%;
-    }
-
-    .product-item,
-    .product-item-rev{
-        max-width: 75vw;
-    }
-
-    .product-img{
-        width: 80%;
-    }
-
-    .product-information{
-        width: 80%;
-    }
-
-}
-
-@media (min-width:780px){
-
-    .product-item,
-    .product-item-rev{
-        flex-direction: row;
-    }
-
-    .product-img{
-        width: 50%;
-    }
-
-    .product-information{
+@media (max-width: 766px) {
+    .product-item{
         max-width: 500px;
     }
 
+    .rev .product-information{
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
 }
 
-@media (min-width:980px){
+@media (min-width: 767px){
+    .product-item{
+        height:auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
 
-    .product-img{
-        width: 40%;
+.product-information{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+@media (min-width:860px) {
+    .product-information{
+        padding: 2rem;
+    }
+}
+
+.rev-border-extra{
+    border-left: var(--border-style);
+    border-bottom: none;
+}
+
+@media (max-width: 767px){
+    .rev-border-extra{
+        border-left: none;
+        border-bottom: var(--border-style);
+    }
+}
+
+.border-extra{
+    border-right: var(--border-style);
+    border-bottom: none;
+}
+
+@media (max-width: 767px){
+    .border-extra{
+        border-right: none;
+        border-bottom: var(--border-style);
+    }
+}
+
+.product-img{
+    width: 100%;
+    max-width: 700px;
+    background-color: var(--pink);
+    margin: 0 auto;
+}
+
+.product-header{
+    margin-top: auto;
+    font-size: 1.9rem;
+    width: 100%;
+    padding: .1rem 0 .4rem 0;
+}
+
+@media (min-width:880px){
+    .product-header{
+        font-size: 3rem;
     }
 
 }
 
-.product-header{
-    text-align: center;
-    padding: .1rem 0 .4rem 0;
-}
-
 .product-text{
-    font-size: .8rem;
-    line-height: 1.2rem;
-    padding-bottom: .4rem;
+    max-width: 450px;
+    margin-top: auto;
+    margin-right: auto;
+    line-height: 1.7rem;
 }
 
 .product-spec{
@@ -726,6 +729,13 @@ ul li{
     font-weight: 900;
 }
 
+.product-item-bottom{
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /*===============================
 7. About Section
