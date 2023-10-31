@@ -108,6 +108,11 @@ html{
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: var(--text_color);
+}
+
 ul li{
     list-style: none;
 }
@@ -182,9 +187,9 @@ img{
 }
 
 .nav-bar-links ul li a{
-    text-decoration: none;
-    margin: .1rem 0;
+
 }
+
 
 .nav-bar-links ul li a:hover{
     background-color: var(--purple);
@@ -202,7 +207,6 @@ img{
 
 /*Nav-wrapper & Container*/
 .nav-bar-links ul li a{
-    color: var(--text_color);
     font-weight: bolder;
 }
 
@@ -309,8 +313,9 @@ img{
 }
 
 .hero-h1-header{
+    margin-top: 6rem;
     text-align: right;
-    padding: 20vh 1rem 0 1rem;
+    padding: 1rem;
     font-size: 3rem;
     font-kerning: auto;
 }
@@ -461,8 +466,15 @@ img{
 .main-intro-img{
     height: auto;
     max-width: 100%;
+    /* border-top: var(--border-style);
+    border-bottom: var(--border-style); */
+}
+
+.img-container{
     border-top: var(--border-style);
     border-bottom: var(--border-style);
+    /* border-left: var(--border-style);
+    border-right: var(--border-style); */
 }
 
 @media (min-width: 768px){
@@ -474,7 +486,6 @@ img{
     .img-container{
         overflow: hidden;
         height: 500px;
-        border: var(--border-style);
     }
     .main-intro-img{
         object-fit: cover;
@@ -620,10 +631,10 @@ img{
 .main-product-container{
     display: grid;
     grid-template-rows: repeat(3, auto);
-    gap: 2rem;
+    gap: 1rem;
     max-width: 1400px;
     padding: 2rem 0;
-    margin: 1rem .8rem;
+    margin: .8rem;
 }
 
 .product-title-container{
@@ -663,15 +674,29 @@ img{
 }
 
 .list-of-products li{
+    padding: 0 .1rem;
     font-weight: 700;
     font-size: .8rem;
     font-family: 'Raleway',Helvetica,sans-serif;
 }
 
+
 @media (min-width: 425px) {
     .list-of-products li{
         font-size: 1.2rem;
     }
+}
+
+.list-of-products li:hover{
+    background-color: var(--purple);
+    box-shadow: var(--border_color) 4px 4px 0 0;
+    -webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+}
+
+.list-of-products li:focus{
+    transform: translate(2px, 2px);
+    box-shadow: var(--border_color) 2px 2px 0 0;
 }
 
 .product-item{
