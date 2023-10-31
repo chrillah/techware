@@ -195,7 +195,7 @@ img{
 
 .nav-bar-links ul li a:focus{
     transform: translate(2px, 2px);
-  box-shadow: var(--border_color) 2px 2px 0 0;
+    box-shadow: var(--border_color) 2px 2px 0 0;
 }
 
 /*Above Validated 2022-09-12*/
@@ -207,6 +207,7 @@ img{
 }
 
 .nav-wrapper{
+    border: var(--border-style);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -284,12 +285,14 @@ img{
     margin-top: 2.2rem;
 }
 
-.nav-wrapper
-/* .hero-item1,
-.hero-item2,
-.hero-item3 */
-{
-    border: var(--border-style);
+.hero-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr ;
+    grid-template-areas:
+    "hero-item1"
+    "hero-item2"
+    "hero-item3";
 }
 
 .hero-item1{
@@ -371,17 +374,6 @@ img{
 }
 
 /*Above Validated 2022-09-14*/
-
-.hero-container{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr 1fr ;
-    grid-template-areas:
-    "hero-item1"
-    "hero-item2"
-    "hero-item3";
-}
 
 @media (min-width: 560px) {
 
@@ -628,10 +620,58 @@ img{
 .main-product-container{
     display: grid;
     grid-template-rows: repeat(3, auto);
-    gap: 3rem;
+    gap: 2rem;
     max-width: 1400px;
     padding: 2rem 0;
     margin: 3rem .8rem;
+}
+
+.product-title-container{
+    padding: 1rem;
+    border: var(--border-style);
+}
+
+@media (min-width: 860px) {
+    .product-title-container{
+        padding: 2rem;
+    }
+}
+
+.product-title{
+    font-size: 2rem;
+    font-family: var(--font-fraunces);
+    font-style: italic;
+}
+
+@media (min-width: 425px) {
+    .product-title{
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .product-title{
+        font-size: 6rem;
+    }
+}
+
+.list-of-products{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-of-products li{
+    font-weight: 700;
+    font-size: .8rem;
+    font-family: 'Raleway',Helvetica,sans-serif;
+}
+
+@media (min-width: 425px) {
+    .list-of-products li{
+        font-size: 1.2rem;
+    }
 }
 
 .product-item{
